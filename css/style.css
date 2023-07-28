@@ -1,0 +1,247 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+}
+#help {
+  position: absolute;
+  width: 250px;
+  bottom: 0;
+  right: -250px;
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+/****** sens top to bottom*****/
+/* .sakura {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: sakuraFall linear infinite;
+  z-index: -2;
+  margin-top: -20px;
+/* } */
+
+/* @keyframes sakuraFall {
+  0% {
+    transform: translateY(0) rotate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}  */
+
+/* change left to right */
+/* .sakura {
+  position: absolute;
+  top: -50px;
+  width: 10px;
+  height: 10px;
+  background-color: pink;
+  border-radius: 50%;
+  animation: sakura-fall linear infinite;
+} */
+
+/* @keyframes sakura-fall {
+  0% {
+    transform: translate3d(0, -10px, 0) rotate(45deg);
+  }
+  100% {
+    transform: translate3d(-100vw, 100vh, 0) rotate(45deg);
+  }
+} */
+
+/* change left to right V2*/
+.sakura {
+  position: absolute;
+  top: -50px;
+  width: 0;
+  height: 0;
+  border: 310px solid transparent; 
+  border-right: 1px solid #ffffff; /* Couleur sakura */
+  transform: rotate(60deg); /* Rotation pour former sakura */
+  animation: sakura-fall linear infinite;
+}
+
+@keyframes sakura-fall {
+  0% {
+    transform: translate3d(0, -30px, 0) rotate(300deg);
+  }
+  100% {
+    transform: translate3d(-70vw, 100vh, 0) rotate(45deg);
+  }
+}
+
+
+
+body {
+  /* background-color: rgb(235, 103, 27); */
+  background-image: url(../img/singe.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.form {
+  height: 900px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+input {
+  margin-bottom: 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: solid 1px white;
+  text-align: center;
+}
+label {
+  color: white;
+  font-size: 30px;
+}
+#name2 {
+  margin-left: 30px;
+}
+#mail {
+  margin-left: 43px;
+}
+#submit {
+  background-color:transparent;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  color: white;
+  border: solid 1px white;
+}
+button {
+  align-items: center;
+  background-color:transparent;
+  border: solid 1px white;
+  border-radius: 5px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bolder;
+  color:white;
+}
+.img1 {
+  width: 30px;
+  margin-right: 10px;
+
+}
+
+.bubble {
+  position: absolute;
+  background-color:transparent;
+  color: #f7be03;
+  border: 1px solid #f7be03;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  bottom: 200px;
+  right: 250px;
+  width: 200px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 30px;
+
+}

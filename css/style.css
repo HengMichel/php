@@ -103,28 +103,40 @@ html {
   overflow: hidden;
 }
 /****** sens top to bottom*****/
-/* .sakura {
+.sakura {
   position: absolute;
-  width: 10px;
-  height: 10px;
+
+  /* width: 10px; */
+  width: 1px;
+
+
+  /* height: 10px; */
+  height: 200px;
+
+
+
   background-color: white;
   border-radius: 50%;
   pointer-events: none;
   animation: sakuraFall linear infinite;
   z-index: -2;
   margin-top: -20px;
-/* } */
+}
 
-/* @keyframes sakuraFall {
+@keyframes sakuraFall {
   0% {
     transform: translateY(0) rotate(0);
     opacity: 1;
   }
-  100% {
+  /* 100% {
     transform: translateY(100vh) rotate(360deg);
     opacity: 0;
+  } */
+  100% {
+    transform: translateY(500vh) rotate(40deg);
+    opacity: 0;
   }
-}  */
+} 
 
 /* change left to right */
 /* .sakura {
@@ -147,16 +159,21 @@ html {
 } */
 
 /* change left to right V2*/
-.sakura {
+/* .sakura {
   position: absolute;
   top: -50px;
   width: 0;
   height: 0;
-  border: 310px solid transparent; 
-  border-right: 1px solid #ffffff; /* Couleur sakura */
-  transform: rotate(60deg); /* Rotation pour former sakura */
-  animation: sakura-fall linear infinite;
-}
+  border: 310px solid transparent;  */
+  /* Couleur sakura */
+  /* border-right: 1px solid #f76af2;  */
+  
+  /* Rotation pour former sakura */
+  /* transform: rotate(60deg); */
+
+
+  /* animation: sakura-fall linear infinite;
+} */
 
 @keyframes sakura-fall {
   0% {
@@ -170,8 +187,7 @@ html {
 
 
 body {
-  /* background-color: rgb(235, 103, 27); */
-  background-image: url(../img/singe.jpg);
+  background-image: url(../img/pagode-yasaka-rue-sannen-zaka-kyoto-japon.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -183,6 +199,8 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
+  background-position: center;
+  padding-bottom: 50px;
 }
 input {
   margin-bottom: 20px;
@@ -191,10 +209,12 @@ input {
   background-color: transparent;
   border: solid 1px white;
   text-align: center;
+  background-position: center;
 }
 label {
   color: white;
   font-size: 30px;
+  background-position: center;
 }
 #name2 {
   margin-left: 30px;
@@ -236,7 +256,6 @@ button {
   border: 1px solid #f7be03;
   border-radius: 10px;
   padding: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   bottom: 200px;
   right: 250px;
   width: 200px;
@@ -245,3 +264,23 @@ button {
   font-size: 30px;
 
 }
+
+
+
+/*************** MEDIAQUERY ***************/
+
+@media (max-width: 1200px) {
+  .form {
+    width: 500px;
+  }
+ 
+}
+
+@media (max-width: 960px) {
+ 
+}
+@media(max-width: 760px){
+ 
+}
+
+/*************** END MEDIAQUERY ***************/

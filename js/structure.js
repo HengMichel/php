@@ -6,27 +6,45 @@ function createSakura() {
     const startX = Math.random() * window.innerWidth;
 
     // const delay = Math.random() * 5;
-    const delay = Math.random() * 2;//increase volume
+    const delay = Math.random() * 1;
+    
+    // const delay = Math.random() * 100;
 
-  
-    // sakura.style.left = startX + 'px';
-    sakura.style.right = startX + 'px';//change left to right
+    
+    //change left to right
+    sakura.style.left = startX + 'px';
+    // sakura.style.right = startX + 'px';
+
+   
+
 
     // sakura.style.animationDuration = Math.random() * 4 + 5 + 's';
-    // increase volume
-    sakura.style.animationDuration = Math.random() * 100 + 200 + 's';
+
+    // sakura.style.animationDuration = Math.random() * 100 + 200 + 's';
+
+    // more speed animation 
+    sakura.style.animationDuration = Math.random() * 1 + 1 + 's';
+    
+
 
     sakura.style.animationDelay = delay + 's';
   
     sakura.addEventListener('animationiteration', () => {
       // sakura.style.left = Math.random() * window.innerWidth + 'px';
-      sakura.style.right = Math.random() * window.innerWidth + 'px';//change left to right
+
+      //change left to right
+      sakura.style.right = Math.random() * window.innerWidth + 'px';
     });
   }
   
   for (let i = 0; i < 30; i++) {
     createSakura();
   }
+  
+  // increase volume but see same a static
+  // for (let i = 0; i < 150; i++) {
+  //   createSakura();
+  // }
   
   setTimeout(function() {
           $('#help').animate({
